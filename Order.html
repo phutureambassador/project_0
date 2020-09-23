@@ -24,61 +24,179 @@
 
             <form>
                 <h2 class="h3">Contact Info</h2>
-                <input type="text" id="Firstname Lastname" placeholder="Firstname Lastname" autofocus />
-                <input type="text" id="Phone Number" placeholder="Phone Number" autofocus />
-                <input type="text" id="Email address" placeholder="Email Address" autofocus />
+                <input type="text" 
+                    id="name-text" 
+                    placeholder="Firstname Lastname" 
+                    required 
+                    class="form-control" 
+                    pattern="(.*)\s(.*)" />
+                <input type="tel" 
+                    id="phone-text" 
+                    placeholder="Phone Number" 
+                    required 
+                    class="form-control" />
+                <input type="email" 
+                    id="email-text" 
+                    placeholder="Email Address" 
+                    required 
+                    class="form-control" />
             </form>
 
             <form>
                 <h2 class="h3">Needed By</h2>
-                <input type="datetime-local" id="Needed By" placeholder="Needed By" />
+                <input type="datetime-local" 
+                    id="needed-by" 
+                    placeholder="Needed By"
+                    required
+                    class="form-control" />
             </form>
 
             <form>
                 <h2 class="h3">Delivery Address (free if within 15 miles)</h2>
-                <input type="text" id="Delivery Address" placeholder="Delivery Address" />
+                <input type="text" 
+                    id="delivery-address" 
+                    placeholder="Delivery Address" 
+                    required
+                    class="form-control" />
             </form>
 
             <form>
                 <h2 class="h3">Cake Size</h2>
-                <input type="text" id="Cake Size" placeholder="Cake Size" />
+                <input type="text" 
+                    id="cakesize-list" 
+                    list="cakesize-data"
+                    placeholder="Cake Size" 
+                    class="form-control" />
+
+                <datalist id="cakesize-data">
+                    <option value="4 inch"></option>
+                    <option value="6 inch"></option>
+                    <option value="8 inch"></option>
+                    <option value="10 inch"></option>
+                    <option value="9 x 13 inch"></option>
+                    <option value="Cupcakes"></option>
+                    <option value="Cupcakes with custom toppers"></option>
+                    <option value="Sculpted cake"></option>
+                </datalist>
             </form>
 
             <form>
-                <h2 class="h3">Cake Flavor</h2>
-                <input type="text" id="Cake Flavor" placeholder="Cake Flavor" />
+                <h2 class="h3">Cake Flavors</h2>
+                <input type="text" 
+                    id="cakeflavors-list" 
+                    list="cakeflavors-data"
+                    placeholder="Cake Flavors" 
+                    class="form-control" />
+
+                <datalist id="cakeflavors-data">
+                    <option value="American Buttercream"></option>
+                    <option value="Swiss Meringue Buttercream"></option>
+                </datalist>
+
+                <input type="text" 
+                    id="classicflavors-list" 
+                    list="classicflavors-data"
+                    placeholder="Classic Flavors" 
+                    class="form-control" />
+
+                <datalist id="classicflavors-data">
+                    <option value="Vanilla Bean: Vanilla cake made with real vanilla beans, vanilla bean buttercream"></option>
+                    <option value="Chocolate: Moist chocolate cake, chocolate fudge buttercream"></option>
+                    <option value="Marble: Vanilla bean and chocolate cake, vanilla or chocolate buttercream"></option>
+                    <option value="Almond: Almond cake, vanilla bean buttercream"></option>
+                    <option value="Confetti: Vanilla bean sprinkle cake, vanilla sprinkle buttercream"></option>
+                    <option value="Red Velvet: Red velvet cake, cream cheese buttercream"></option>
+                    <option value="Lemon: Tangy lemon cake, lemon zest vanilla buttercream"></option>
+                </datalist>
+
+                <input type="text" 
+                    id="specialtyflavors-list" 
+                    list="specialtyflavors-data"
+                    placeholder="Specialty Flavors" 
+                    class="form-control" />
+
+                <datalist id="specialtyflavors-data">
+                    <option value="Fat Elvis: Banana cake, peanut butter buttercream, candied bacon"></option>
+                    <option value="Cookie Dough: Chocolate Chip Vanilla Cake, edible cookie dough filling, crushed chocolate chip cookies, vanilla bean buttercream"></option>
+                    <option value="Monster Cookie: Peanut butter cake, M&M, honey roasted peanut and chocolate chip cookie dough filling, peanut butter buttercream"></option>
+                    <option value="Peanut Butter: Reese's peanut butter cup chocolate cake, whipped peanut butter buttercream, crushed Reese's peanut butter cups"></option>
+                    <option value="White Chocolate Raspberry: Vanilla white chocolate chip cake, raspberry compote filling, vanilla bean buttercream, white chocolate ganache"></option>
+                    <option value="Grandma's Carrot Cake: Carrot, pineapple, coconut (optional) and toasted walnut cake, cinnamon cream cheese buttercream"></option>
+                    <option value="Hummingbird: Banana, pineapple and toasted pecan cake, cream cheese buttercream"></option>
+                    <option value="Margarita: Tangy lime cake, tequila glaze, tequila lime zest vanilla buttercream, hint of salt"></option>
+                    <option value="Butterbeer: Vanilla butterscotch chip cake, butterscotch ganache filling, vanilla bean buttercream"></option>
+                    <option value="Strawberry Fields: Strawberry cake, strawberry compote filling, vanilla bean buttercream"></option>
+                    <option value="Cookies & Cream: Oreo chocolate cake, vanilla bean crushed Oreo buttercream"></option>
+                    <option value="Cheesecake: Graham cracker crust, cheesecake filling (Fruit topping or buttercream optional)"></option>
+                    <option value="Oreo Cheesecake: Oreo crust, Oreo cheesecake filling, vanilla buttercream"></option>
+                    <option value="Mint Cookies & Cream: Mint Oreo chocolate cake, vanilla mint crushed Oreo buttercream"></option>
+                    <option value="Peanut Butter & Jelly: Peanut butter cake, grape jelly filling, peanut butter buttercream, crushed peanuts"></option>
+                    <option value="Raspberry Amaretto: Almond cake, raspberry amaretto filling, amaretto buttercream"></option>
+                </datalist>
             </form>
 
             <form>
-                <h2 class="h3">Fondant Accents (y or n)</h2>
-                <input type="text" id="Fondant Accents" placeholder="Fondant Accents" />
+                <h2 class="h3">Fondant Accents</h2>
+                <input type="text" 
+                    id="fondantaccents-list" 
+                    list="fondantaccents-data"
+                    placeholder="Yes or No" 
+                    class="form-control" />
+
+                <datalist id="fondantaccents-data">
+                    <option value="Yes"></option>
+                    <option value="No"></option>
+                </datalist>
             </form>
 
             <form>
-                <h2 class="h3">Food Allergies, if any</h2>
-                <input type="text" id="Food Allergies" placeholder="Food Allergies" />
+                <h2 class="h3">Food Allergies</h2>
+                <input type="text" 
+                    id="foodallergies-list" 
+                    list="foodallergies-data"
+                    placeholder="Yes or No" 
+                    class="form-control" />
+
+                <datalist id="foodallergies-data">
+                    <option value="Yes"></option>
+                    <option value="No"></option>
+                </datalist>
+
+                <input type="text" 
+                    id="allergies-text" 
+                    placeholder="Please explain" 
+                    class="form-control" />
             </form>
 
             <form>
                 <h2 class="h3">Design Theme</h2>
-                <input type="text" id="Design Theme" placeholder="Design Theme" />
+                <input type="text" 
+                    id="design-theme" 
+                    placeholder="Design Theme" 
+                    class="form-control" />
             </form>
 
             <form>
-                <h2 class="h3">Wording, if any</h2>
-                <input type="text" id="Wording" placeholder="Wording" />
+                <h2 class="h3">Wording</h2>
+                <input type="text" 
+                    id="wording" 
+                    placeholder="Wording" 
+                    class="form-control"/>
             </form>
 
             <form>
                 <h2 class="h3">Photos</h2>
-                <input type="text" id="Photos" placeholder="Photos" />
+                <input type="text" 
+                    id="photos" 
+                    placeholder="Photos"
+                    class="form-control" />
             </form>
 
             <form>
                 <h2 class="h3">Submit</h2>
-                <input type="button" id="Submit" placeholder="Prepare your appetite!" />
-            </form>
-
+                <input type="button" 
+                    id="submit" 
+                    placeholder="Prepare your appetite!" />
             </form>
 
         </div>
