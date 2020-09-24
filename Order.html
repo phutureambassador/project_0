@@ -29,15 +29,17 @@
                     placeholder="Firstname Lastname" 
                     required 
                     class="form-control" 
-                    pattern="(.*)\s(.*)" />
+                    pattern="(.*)\s(.*)" 
+                    maxlength="50"
+                    autofocus />
                 <input type="tel" 
                     id="phone-text" 
-                    placeholder="Phone Number" 
+                    placeholder="Phone number" 
                     required 
                     class="form-control" />
                 <input type="email" 
                     id="email-text" 
-                    placeholder="Email Address" 
+                    placeholder="Email address" 
                     required 
                     class="form-control" />
             </form>
@@ -61,14 +63,15 @@
             </form>
 
             <form>
-                <h2 class="h3">Cake Size</h2>
+                <h2 class="h3">Cake Type</h2>
                 <input type="text" 
-                    id="cakesize-list" 
-                    list="cakesize-data"
-                    placeholder="Cake Size" 
+                    id="caketype-list" 
+                    list="caketype-data"
+                    placeholder="Cake Type" 
+                    required
                     class="form-control" />
 
-                <datalist id="cakesize-data">
+                <datalist id="caketype-data">
                     <option value="4 inch"></option>
                     <option value="6 inch"></option>
                     <option value="8 inch"></option>
@@ -86,6 +89,7 @@
                     id="cakeflavors-list" 
                     list="cakeflavors-data"
                     placeholder="Cake Flavors" 
+                    required
                     class="form-control" />
 
                 <datalist id="cakeflavors-data">
@@ -155,6 +159,7 @@
                     id="foodallergies-list" 
                     list="foodallergies-data"
                     placeholder="Yes or No" 
+                    required
                     class="form-control" />
 
                 <datalist id="foodallergies-data">
@@ -173,6 +178,7 @@
                 <input type="text" 
                     id="design-theme" 
                     placeholder="Design Theme" 
+                    required
                     class="form-control" />
             </form>
 
@@ -181,6 +187,7 @@
                 <input type="text" 
                     id="wording" 
                     placeholder="Wording" 
+                    required
                     class="form-control"/>
             </form>
 

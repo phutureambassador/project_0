@@ -106,3 +106,44 @@ h3 {
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
+/* the below is not working
+  input:required {
+     border-left: 2px solid #c33;
+  }
+  
+  input:focus:invalid,
+  textarea:focus:invalid,
+  select:focus:invalid {
+    color: #c33;
+    border-color: #c33;
+  }
+
+  input:focus:invalid:focus,
+  textarea:focus:invalid:focus,
+  select:focus:invalid:focus {
+    border-color: #c33;
+    -webkit-box-shadow: 0 0 6px #fcc;
+       -moz-box-shadow: 0 0 6px #fcc;
+            box-shadow: 0 0 6px #fcc;
+  }
+*/
+  input:valid + .invalid {
+    visibility: hidden;
+  }
+
+  input:invalid + .invalid {
+    visibility: visible;
+  }
+
+  input:invalid {
+    color: #c33;
+  }
+
+  input:valid {
+    border-bottom: transparent;
+  }
+
+  .invalid {
+    color: #0000ff;
+  }
+  
