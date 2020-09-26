@@ -22,7 +22,7 @@ h3 {
     color: #000000;
     margin: 0 0 10px 0;
     text-align: center;
-    font-size: 400%;
+    font-size: 150%;
     font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -46,104 +46,3 @@ h3 {
     font-style: italic;
     text-transform: uppercase;
 }
-
-/* The container must be positioned relative: */
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
-    background-color: DodgerBlue;
-  }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-/* the below is not working
-  input:required {
-     border-left: 2px solid #c33;
-  }
-  
-  input:focus:invalid,
-  textarea:focus:invalid,
-  select:focus:invalid {
-    color: #c33;
-    border-color: #c33;
-  }
-
-  input:focus:invalid:focus,
-  textarea:focus:invalid:focus,
-  select:focus:invalid:focus {
-    border-color: #c33;
-    -webkit-box-shadow: 0 0 6px #fcc;
-       -moz-box-shadow: 0 0 6px #fcc;
-            box-shadow: 0 0 6px #fcc;
-  }
-*/
-  input:valid + .invalid {
-    visibility: hidden;
-  }
-
-  input:invalid + .invalid {
-    visibility: visible;
-  }
-
-  input:invalid {
-    color: #c33;
-  }
-
-  input:valid {
-    border-bottom: transparent;
-  }
-
-  .invalid {
-    color: #0000ff;
-  }
-  
