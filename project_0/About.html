@@ -14,26 +14,23 @@
 
     <body>
         <header class="header">
+            <a class="skip-link" href="#main">Skip to main</a>
             <div class="wrapper">
                 <img class="header-logo" src="C:\Users\Motl\Projects\project_0\images\logo.jpg" />
-                <span class="header-title">Handcrafted Specialty Cakes</span>
-                <form action="/search" method="POST" role="search" >
-                    <label for="query">Search</label>
-                    <input id="query" name="search" type="search" />
-                    <button>Search</button>
-                </form> 
+                <span class="header-title">Handcrafted Specialty Cakes</span> 
             </div>  
             <nav class="navigation" aria-label="site">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>
+                    <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <section class="about">
+        <div id="wrapper">
+            <main id="main" class="main" tabindex="-1">
                 <h1>About</h1>
                     <p> purus sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent elementum 
                     facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque 
@@ -48,8 +45,8 @@
                     a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas 
                     sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget  
                     </p>
-            </section>
-        </main>
+            </main>
+        </div>
 
         <footer class="footer">
             <nav class="navigation">
@@ -57,10 +54,11 @@
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>
+                    <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
             <p>All content on this site &copy; 2020 - Beatnik Cake Co.</p>
-            <p>Click <a href="sitemap.html">here</a> for Site Map</p>
+            <p><a href="sitemap.html">Site Map</a></p>
         </footer>
 
     </body>

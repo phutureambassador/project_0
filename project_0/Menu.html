@@ -14,26 +14,23 @@
 
     <body>
         <header class="header">
+            <a class="skip-link" href="#main">Skip to main</a>
             <div class="wrapper">
                 <img class="header-logo" src="C:\Users\Motl\Projects\project_0\images\logo.jpg" />
-                <span class="header-title">Handcrafted Specialty Cakes</span>
-                <form action="/search" method="POST" role="search" >
-                    <label for="query">Search</label>
-                    <input id="query" name="search" type="search" />
-                    <button>Search</button>
-                </form> 
+                <span class="header-title">Handcrafted Specialty Cakes</span> 
             </div>  
             <nav class="navigation" aria-label="site">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>
                     <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
         </header>
         
-        <main>
-            <section class="menu">
+        <div id="wrapper">
+            <main id="main" class="main" tabindex="-1">
                 <h1>Menu</h1>
             
                 <div class="cake-flavors">
@@ -84,19 +81,20 @@
                         <li>Cupcakes with custom toppers: $2.50 each</li>
                         <li>**Sculpted cakes priced upon request**</li>
                 </div>
-            </section>
-        </main>
+            </main>
+        </div>
         
         <footer class="footer">
             <nav class="navigation">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>
                     <li><a href="About.html">About</a></li>
                 </ul>
             </nav>
             <p>All content on this site &copy; 2020 - Beatnik Cake Co.</p>
-            <p>Click <a href="sitemap.html">here</a> for Site Map</p>
+            <p><a href="sitemap.html">Site Map</a></p>
         </footer>
 
     </body>
