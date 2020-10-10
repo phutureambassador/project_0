@@ -16,11 +16,10 @@
         <header class="header">
             <a class="skip-link" href="#main">Skip to main</a>
             <div class="wrapper">
-                <img class="header-logo" src="C:\Users\Motl\Projects\project_0\images\logo.jpg" />
-                <span class="header-title">Handcrafted Specialty Cakes</span> 
+                <img class="logo" src="C:\Users\Motl\Projects\project_0\images\logo.jpg" alt="Beatnik Cake Company cupcake logo"/>
             </div>  
             <nav class="navigation" aria-label="site">
-                <ul>
+                <ul class="nav_links">
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>
@@ -30,8 +29,8 @@
         </header>
         
         <div id="wrapper">
-            <main class="main" tabindex="-1">
-                <h1>Order Form</h1>
+            <main class="order" tabindex="-1">
+                <h1>Handcrafted Specialty Cakes</h1>
 
                 <form id="order-form" action="/contact.php" method="POST" novalidate>
 
@@ -41,7 +40,7 @@
                     <label for="name" aria-live="assertive">Name (Required):
                         <span class="error-message">Name cannot be empty</span>
                     </label>
-                    <input id="name" type="text" name="name" maxlength=50 pattern="(.*)\s(.*)" autofocus required> 
+                    <input id="name" type="text" name="name" maxlength=50 pattern="(.*)\s(.*)" required> 
                     
                     <label for="email" aria-live="assertive">Email (Optional):</label>
                     <input id="email" type="email" name="email">
@@ -162,7 +161,7 @@
 
         <footer class="footer">
             <nav class="navigation">
-                <ul>
+                <ul class="nav_links">
                     <li><a href="Home.html">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
                     <li><a href="Order.html">Order</a></li>

@@ -1,14 +1,49 @@
-html, body, h1, h2, h3, p, ol, ul, li, a {
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    font-size: 100%;
-    font: inherit;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f89f63;
 }
 
-body {
-    background-color: #f89f63;
-    font-family: cursive, sans-serif;  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    color: #edf0f1;
+}
+
+header li, a {
+    font-family: "Yellowtail", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #edf0f1;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: black ;
 }
 
 .skip-link {
@@ -18,3 +53,47 @@ body {
 .skip-link:focus {
     left: 50%;
 }
+
+/* work on one thing at a time, right now, that's navbar
+
+body:
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    
+}
+
+#main {
+    display: flex;
+    color: #edf0f1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10%;
+    color: #edf0f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+div {
+    font-family: "lato", sans-serif;
+    font-size: 1em;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+li {
+    font-family: "lato", sans-serif;
+    display: flex;
+    text-align: center;
+    list-style: none;
+} 
+*/
